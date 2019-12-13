@@ -13,11 +13,15 @@ const Wrapper = styled.section`
   padding: 5 em;
   background: purple;
 `;
+const Button = styled.button`
+  background: ${props => (props.primary ? "brown" : "green")};
+`;
 function App() {
   return (
     <Wrapper>
       <div className="App">
         <Title>Hello CodeSandbox</Title>
+        <Button primary={false}>asdfsf</Button>
         <h2>Start editing to see some magic happen!</h2>
       </div>
     </Wrapper>
